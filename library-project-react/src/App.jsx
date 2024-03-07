@@ -1,3 +1,4 @@
+import { useReducer } from 'react';
 import './App.css'
 import CardList from './components/CardList';
 import Form from './components/Form';
@@ -6,7 +7,8 @@ import Search from './components/Search';
 // import { data, kategori } from './assets/data/data';
 
 function App() {
-    // buradaki yapilan context'e tasindi.
+  // buradaki yapilan context'e tasindi.
+
   return (
     <>
       <Navi />

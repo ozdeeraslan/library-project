@@ -4,11 +4,12 @@ import DataContext from '../context/DataContext';
 
 
 const Search = () => {
-  const {setSearch} = useContext(DataContext)
+  const { dispatch } = useContext(DataContext)
   return (
     <div className='search-container'>
-        <input onChange={(e) => { setSearch(e.target.value) }} type="text" placeholder='Search Books...' />
-        <input type="submit" value="&#128269;" />
+      {/* case-8 */}
+      <input onChange={(e) => dispatch({ type: "search", payload: e.target.value })} type="text" placeholder='Search Books...' />
+      <input type="submit" value="&#128269;" />
     </div>
   );
 };

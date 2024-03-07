@@ -5,7 +5,7 @@ import DataContext from '../context/DataContext'
 
 
 const Navi = () => {
-  const { kategoriler, setSecilenKategori } = useContext(DataContext)
+  const { state, dispatch } = useContext(DataContext)
   return (
     <nav>
       <div className='brand'>
@@ -13,8 +13,9 @@ const Navi = () => {
         <h3>My Library</h3>
       </div>
       <ul>
-        {kategoriler.map((item) => (
-          <li onClick={(e) => setSecilenKategori(e.target.innerText)} key={item.id}>{item.kategoriAdi}</li>
+        {state.kategoriler.map((item) => (
+          // case-9
+          <li onClick={(e) => dispatch({type:"secilenKategori", payload:e.target.innerText})} key={item.id}>{item.kategoriAdi}</li>
         ))}
       </ul>
     </nav>

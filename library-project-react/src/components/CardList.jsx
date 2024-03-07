@@ -8,11 +8,11 @@ const CardList = () => {
   return (
     <div className='card-list'>
       {
-        kitaplik.map(kitap =>
+        state.kitaplik.map(kitap =>
           !kitap.isDeleted&&
           (   
             (         
-            kitap.kitapAdi.toLowerCase().startsWith(search.toLowerCase())
+              kitap.kitapAdi.toLowerCase().startsWith(search.toLowerCase())
             ||
             kitap.kitapYazari.toLowerCase().startsWith(search.toLowerCase())
             )          
