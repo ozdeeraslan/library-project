@@ -24,7 +24,6 @@ const LoginPage = () => {
         }
     }
 
-
     return (
         <div className='main-page'>
             <div className="animate">
