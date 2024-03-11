@@ -125,45 +125,6 @@
       "kitapResmi": "https://img.kitapyurdu.com/v1/getImage/fn:11435778/wh:true/wi:800",
       "kitapSayfaSayisi": 220,
       "kitapAciklamasi": "Grigory Petrov’un çeşitli aralıklarla çıktığı Finlandiya seyahatlerindeki notlardan oluşan Beyaz Zambaklar Ülkesinde, 1800’lerin sonlarında Finlandiya halkının içinde bulunduğu durumu, cehaletten kurtulmak için başta Johan Vilhelm Snellman olmak üzere ülkedeki bir avuç Fin aydınının verdiği olağanüstü mücadeleyi anlatır. Petrov’un 1923 yılında kaleme aldığı eser Finlandiya’ya adanmış olmakla beraber, gelişmekte olan ülkelere rehber olacak nitelikte bir uygarlık mücadelesinin öyküsüdür aynı zamanda."
-    },
-    {
-      "id": "15",
-      "kitapAdi": "ffff",
-      "kitapYazari": "ffff",
-      "kitapKategorisi": "Literature",
-      "kitapResmi": "",
-      "kitapSayfaSayisi": "1",
-      "kitapAciklamasi": "fff",
-      "isDeleted": true
-    },
-    {
-      "id": "16",
-      "kitapAdi": "deneme",
-      "kitapYazari": "deneme yazar",
-      "kitapKategorisi": "Literature",
-      "kitapResmi": "",
-      "kitapSayfaSayisi": "1",
-      "kitapAciklamasi": "fff",
-      "isDeleted": true
-    },
-    {
-      "id": "17",
-      "kitapAdi": "deneme",
-      "kitapYazari": "dgg",
-      "kitapKategorisi": "History",
-      "kitapResmi": "",
-      "kitapSayfaSayisi": "2",
-      "kitapAciklamasi": "dgdg",
-      "isDeleted": true
-    },
-    {
-      "id": "18",
-      "kitapAdi": "deneme",
-      "kitapYazari": "deneme yazar",
-      "kitapKategorisi": "Other",
-      "kitapResmi": "",
-      "kitapSayfaSayisi": "10",
-      "kitapAciklamasi": "sdsd"
     }
   ],
   "kategoriler": [

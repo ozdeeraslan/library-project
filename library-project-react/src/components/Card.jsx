@@ -3,14 +3,25 @@ import '../assets/styles/card.scss'
 import Book from '../assets/img/defaultResim.jpg'
 import DataContext from '../context/DataContext';
 import { useContext } from 'react';
+import AuthContext from '../context/AuthContext';
+
+
+
 
 
 const Card = ({ kitap }) => {
   const { kitapSil, cardDuzenle } = useContext(DataContext);
+  const {isAuthenticated} = useContext(AuthContext);
   return (
     <div key={kitap.id} className="card">
-      <button onClick={() => kitapSil(kitap.id)} className='delete'>&#10008;</button>
-      <button onClick={() => cardDuzenle(kitap.id)} className='edit'>&#10000;</button>
+      {
+        isAuthenticated&&
+      <>
+        <button onClick={() => kitapSil(kitap.id)} className='delete'>&#10008;</button>
+        <button onClick={() => cardDuzenle(kitap.id)} className='edit'>&#10000;</button>
+      </>
+      }
+
       <img src={kitap.kitapResmi ? kitap.kitapResmi : Book} alt="kitap-kapak" />
       <div className="card-body">
         <p>{kitap.kitapAdi}</p>

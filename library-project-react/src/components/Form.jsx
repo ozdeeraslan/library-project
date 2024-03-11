@@ -6,10 +6,9 @@ const Form = () => {
   const {
     handleSubmit,
     state, dispatch
-    // case-10/15 formCaseleri
-  } = useContext(DataContext)
+  } = useContext(DataContext);
+  //buradaki yapılar context'e taşındı!
 
-  // buradaki yapilan context'e tasindi.
   return (
     <div className='form-container'>
       <h2>{state.secilenKitap ? "Edit a Book!" : "Add a Book!"}</h2>
@@ -38,7 +37,7 @@ const Form = () => {
         <div>
           <textarea value={state.kitapAciklamasi} onChange={(e) => { dispatch({ type: "kitapAciklamasi", payload: e.target.value }) }} placeholder='Book Description'></textarea>
         </div>
-        <input disabled={state.kitapAdi === "" || state.kitapYazari === "" || state.kitapKategorisi === "" || state.kitapSayfaSayisi === 0 || state.kitapAciklamasi === ""} type="submit" value={state.secilenKitap ? "Edit" : "Add"} />
+        <input disabled={state.kitapAdi === "" || state.kitapYazari === "" || state.kitapKategorisi === "--Choose a Category" || state.kitapSayfaSayisi === 0 || state.kitapAciklamasi === ""} type="submit" value={state.secilenKitap ? "Edit" : "Add"} />
       </form>
 
     </div>

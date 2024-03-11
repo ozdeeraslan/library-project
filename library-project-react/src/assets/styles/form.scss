@@ -1,55 +1,68 @@
-.form-container {
-  width: 90%; 
-  max-width: 500px; 
-  margin: 0 auto; 
+.form-container,
+form {
+  width: 90%;
+  max-width: 500px;
+  margin: 15px auto;
 
   h2 {
     text-align: center;
     color: rgb(129, 65, 65);
   }
 
-  form {
-    background-color: rgb(194, 178, 128); /* Kutunun arka plan rengi */
-    padding: 20px; /* İçeriği kenarlardan biraz uzaklaştırır */
-    border-radius: 10px; /* Kenarları yuvarlar */
-    
-    div {
-      margin-bottom: 1rem; 
-      
-      input,
-      select,
-      textarea {
-        padding: 0.5rem; 
-        width: 100%; 
-        background-color: #f0f0f0; 
-        border: 3px solid #ccc; 
-        border-radius: 10px;
-        font-family: Arial, Helvetica, sans-serif;
-      }        
+  background-color: rgb(194, 178, 128);
+  /* Kutunun arka plan rengi */
+  padding: 20px;
+  /* İçeriği kenarlardan biraz uzaklaştırır */
+  border-radius: 10px;
+  /* Kenarları yuvarlar */
+
+
+  margin-bottom: 1rem;
+
+  input,
+  select,
+  textarea {
+    display: block;
+    margin: 10px;
+    padding: 0.5rem;
+    width: 100%;
+    background-color: #f0f0f0;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+  input[type="submit"] {
+    padding: 0.5rem 1rem;
+    /* Butonun içerisindeki boşluğu ayarla */
+    width: 100%;
+    /* Butonun genişliğini formun genişliğine eşitle */
+    background-color: rgb(129, 65, 65);
+    /* Butonun arka plan rengi */
+    color: white;
+    /* Buton metninin rengi */
+    border: none;
+    /* Buton kenarlık olmadan */
+    border-radius: 10px;
+    /* Butonun kenarını yuvarla */
+    cursor: pointer;
+    /* Üzerine gelindiğinde imleci değiştir */
+    transition: background-color 0.3s ease;
+    /* Düzenli bir geçiş efekti sağla */
+
+    /* Butonun üzerine gelindiğinde arka plan rengini değiştir */
+    &:hover {
+      background-color: rgb(109, 55, 55);
     }
 
-    input[type="submit"] {
-      padding: 0.5rem 1rem; /* Butonun içerisindeki boşluğu ayarla */
-      width: 100%; /* Butonun genişliğini formun genişliğine eşitle */
-      background-color: rgb(129, 65, 65); /* Butonun arka plan rengi */
-      color: white; /* Buton metninin rengi */
-      border: none; /* Buton kenarlık olmadan */
-      border-radius: 10px; /* Butonun kenarını yuvarla */
-      cursor: pointer; /* Üzerine gelindiğinde imleci değiştir */
-      transition: background-color 0.3s ease; /* Düzenli bir geçiş efekti sağla */
-
-      /* Butonun üzerine gelindiğinde arka plan rengini değiştir */
-      &:hover {
-        background-color: rgb(109, 55, 55);
-      }
-
-      /* Butonun basıldığında arka plan rengini daha da değiştir */
-      &:active {
-        background-color: rgb(89, 45, 45);
-      }
+    /* Butonun basıldığında arka plan rengini daha da değiştir */
+    &:active {
+      background-color: rgb(89, 45, 45);
     }
   }
-  input[type="submit"]:disabled{
+
+  input[type="submit"]:disabled {
     opacity: 0;
     cursor: auto;
   }
